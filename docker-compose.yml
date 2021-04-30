@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+
+  server:
+    container_name: server
+    build: server/
+    command: python ./server.py
+    restart: always
+    ports:
+      - 9090:9090
